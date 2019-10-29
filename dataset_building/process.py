@@ -212,18 +212,18 @@ def process_dir(
 #  boxes
 # depicting the same person in adjacent frames of this video.
 action_labels_cols = [
-        'video_id',
-        'middle_frame_timestamp',
-        'x1', 'y1',
-        'x2', 'y2',
-        'action_id',
-        'person_id'
+    'video_id',
+    'middle_frame_timestamp',
+    'x1', 'y1',
+    'x2', 'y2',
+    'action_id',
+    'person_id'
 ]
 
-video_dir = 'data/videos/AVA_action/train_val'
-output = 'data/videos/AVA_action/val/videos'
-label_file = 'data/ava_v2.2/ava_val_v2.2.csv'
-label_dir = 'data/videos/AVA_action/val/labels'
+# video_dir = 'data/videos/AVA_action/train_val'
+# output = 'data/videos/AVA_action/val/videos'
+# label_file = 'data/ava_v2.2/ava_val_v2.2.csv'
+# label_dir = 'data/videos/AVA_action/val/labels'
 
 # process_dir(
 #         video_dir,

@@ -106,29 +106,9 @@ def download_AVA_speech_filenames(out_path: str) -> str:
 # ============================= SCRIPT ================================
 
 
-train_val_file = 'ava_file_names_trainval_v2.1.txt'
-test_file = 'ava_file_names_test_v2.1.txt'
-ava_train_val_files = read_list_of_files(train_val_file)
-ava_test_files = read_list_of_files(test_file)
-
-ava_test_dir = 'data/videos/AVA_action/test_vids/'
-
-# os.chdir('AVA_action')
-# os.chdir('train_val')
-# for f in tqdm(ava_train_val_files):
-#     if not os.path.exists(f):
-#         url = f'{ava_train_val_url}{f}'
-#         try:
-#             wget.download(url, bar=None)
-#         except:
-#             continue
+# train_val_file = 'ava_file_names_trainval_v2.1.txt'
+# test_file = 'ava_file_names_test_v2.1.txt'
+# ava_train_val_files = read_list_of_files(train_val_file)
+# ava_test_files = read_list_of_files(test_file)
 #
-# os.chdir('../test')
-#
-# for f in tqdm(ava_test_files):
-#     if not os.path.exists(f):
-#         url = f'{ava_test_url}{f}'
-#         try:
-#             wget.download(url, bar=None)
-#         except:
-#             continue
+# ava_test_dir = 'data/videos/AVA_action/test_vids/'
