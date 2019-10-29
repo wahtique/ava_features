@@ -5,14 +5,27 @@ using data from CIT and UTC
 
 ## Overview 
 
-This project aims to extract features as described in Google's AVA dataset on small clips of video.
+This project aims to train a model to extract features as described in Google's AVA dataset on small clips of video, focusing more particularly on person to person interactions interactions.
 
-## Content
+## Use
 
-### video_utils 
+Define an AVAGenerator from a directory which should have the following structure :
 
-mostly contains utility function to load and slice a video
+```
+dir/
+    videos/
+        vid1.mp4
+        vid2.mp4
+        ...
+    labels/
+        lab1.csv
+         ...
+```
+with each lab#.csv begin the labels in a csv format for the corresponding video file.
 
-### features_computing
+This data can be consumed to train a model with input shape similar to the one in the models.py file (only one for now).
 
-functions related to using an existing model to compute features of interest
+## TO DO
+    - fix performances issues for regular PC
+    - clean notebook example
+    - add deeper models (the "deep_lstm" has only 2 lstm layers arranged in a sequencial model)
