@@ -1,7 +1,7 @@
 # AVA_features
 
 by William Veal Phan (william.veal-phan@etu.utc.fr)
-using data from CIT and UTC
+using the Google AVA dataset. 
 
 ## Overview 
 
