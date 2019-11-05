@@ -28,10 +28,10 @@ def main():
     SEQUENCE_SHAPE = (SEQ_LENGTH, ROWS, COLS, CHANNELS)  # hack for 5 fps
     IMAGE_SHAPE = (ROWS, COLS, CHANNELS)
     IMAGE_TARGET_SIZE = (ROWS, COLS)
-    MODEL_NAME = 'vgg16deeplstm'
+    MODEL_NAME = 'xceptiondeeplstm'
     train_dir = '../data/AVA/dataset/AVA_action/train'
     val_dir = '../data/AVA/dataset/AVA_action/val'
-    WORKERS = 6
+    WORKERS = 8
     log.info(f"""
     {datetime.datetime.now()} : start 
 
